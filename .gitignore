@@ -1,0 +1,9 @@
+*/node_modules/*
+
+*/.angular/*
+
+.vs/*
+*/.vs/*
+
+WebAPI/obj/*
+WebAPI/bin/*
