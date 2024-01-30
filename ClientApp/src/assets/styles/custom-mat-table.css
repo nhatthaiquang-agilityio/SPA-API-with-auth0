@@ -1,0 +1,61 @@
+table {
+    width: 100%;
+}
+
+table .no-data-row {
+    height: 198px;
+}
+
+.no-data-cell {
+    text-align: center;
+}
+
+.no-data-cell > span {
+    display: block;
+    margin-top: 4px;
+}
+
+.no-data-cell > span.retry {
+    display: block;
+    color: var(--color-neptune);
+    cursor: pointer;
+}
+
+.mat-row:hover .mat-cell {
+    background-color: #dedede;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+.mat-cell {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.mat-dialog-title {
+    background-color: lightblue;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.mat-table-header-font{
+    font-size:13px;
+    font-weight: bolder;
+}
+
+.mat-table-body-font{
+    font-size: smaller;
+}
+
+::ng-deep .mat-form-field-flex .mat-form-field-infix {
+    width: 100%;
+}
