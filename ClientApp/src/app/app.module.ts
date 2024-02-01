@@ -2,14 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { AuthModule } from '@auth0/auth0-angular';
+import { AuthHttpInterceptor, AuthModule } from '@auth0/auth0-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './material.module';
 import { environment as env } from '../environments/environment';
 import { WeatherModule } from './weather/weather.module';
-import { AuthInterceptorService } from './shared/services/auth-intercepter.service';
-
 
 @NgModule({
   declarations: [
@@ -40,7 +38,7 @@ import { AuthInterceptorService } from './shared/services/auth-intercepter.servi
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptorService,
+      useClass: AuthHttpInterceptor,
       multi: true
     }
   ],

@@ -6,10 +6,10 @@
 export const environment = {
   production: false,
   auth: {
-    domain: 'dev-i5eh5nau.us.auth0.com',
-    clientId: '<ClientId>',
+    domain: '<Auth0Domain>',
+    clientId: '<Auth0ClientId>',
     redirectUri: 'http://localhost:4200/',
-    audience: 'https://dev-i5eh5nau.us.auth0.com/api/v2/'
+    audience: '<Auth0Audience>'
   },
   baseAPI: 'https://localhost:44367'
 };
